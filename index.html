@@ -1,24 +1,15 @@
-<!--
-  Tập tin mẫu: index.html
-  Hướng dẫn: copy toàn bộ file này ra 1 tệp index.html, sửa các chỗ có [TÊN], [MÔ TẢ], hình ảnh, số điện thoại, link mạng xã hội.
-  Có thể deploy trực tiếp lên Netlify (kéo-thả) hoặc đưa vào GitHub và connect Netlify (New site from Git).
-
-  Lưu ý về form liên hệ: file này dùng Netlify Forms. Form sẽ hiển thị trong Netlify dashboard sau khi site được deploy trên Netlify.
--->
-
 <!doctype html>
 <html lang="vi">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Học tiếng Anh với Ms Thanh Thanh — Gia sư mọi lứa tuổi & báo bài trên lớp</title>
-  <meta name="description" content="Học tiếng Anh cùng Ms Thanh Thanh. Gia sư thân thiện, kèm 1:1, lớp nhóm nhỏ, học sinh mất gốc, báo bài trên lớp. Học thử 1 buổi.">
-  <meta property="og:title" content="Học tiếng Anh với Ms Thanh Thanh">
-  <meta property="og:description" content="Gia sư tiếng Anh - Giao tiếp | học sinh mất gốc | báo bài trên lớp. Lớp online & offline.">
-  <meta property="og:image" content="https://via.placeholder.com/1200x630.png?text=Gia+s%C6%B0+Ti%E1%BA%BFng+Anh">
+  <title>Beeenglish — Ms Brenna</title>
+  <meta name="description" content="Cô Brenna thân thiện cùng bé học tiếng Anh. Kèm tiếng Anh mọi lứa tuổi, báo bài trên lớp, học sinh mất gốc.">
+  <meta property="og:title" content="Beeenglish — Ms Brenna">
+  <meta property="og:description" content="Gia sư tiếng Anh — Kèm mọi lứa tuổi | học sinh mất gốc | báo bài trên lớp.">
+  <meta property="og:image" content="https://raw.githubusercontent.com/Beeenglish/MrsBy/main/%E1%BA%A3nh%20th%E1%BA%BB.jpg">
   <meta property="og:type" content="website">
-  <link rel="icon" href="data:;base64,iVBORw0KGgo="> <!-- thay bằng favicon của anh nếu có -->
-  <!-- Google font -->
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
   <style>
@@ -37,30 +28,20 @@
     .logo{font-weight:700;color:var(--accent);font-size:18px}
     nav a{margin-left:18px;text-decoration:none;color:inherit;font-weight:500}
     .cta{background:var(--accent);color:white;padding:10px 14px;border-radius:10px;text-decoration:none}
-
-    /* Hero */
     .hero{display:grid;grid-template-columns:1fr 360px;gap:28px;align-items:center;padding:36px 0}
     .hero h1{font-size:28px;margin:0 0 12px}
     .hero p{color:var(--muted);margin:0 0 20px}
     .hero .buttons{display:flex;gap:12px}
     .card{background:var(--card);border-radius:12px;padding:18px;box-shadow:0 6px 18px rgba(12,15,20,0.06)}
     .teacher-photo{width:100%;height:100%;object-fit:cover;border-radius:10px}
-
-    /* sections */
     section{padding:26px 0}
     .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
     .grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
     .course{padding:16px;border-radius:10px}
-
-    /* pricing */
     .pricing{display:flex;gap:12px;flex-wrap:wrap}
     .price-card{flex:1;min-width:220px;padding:18px;border-radius:12px;background:var(--card);box-shadow:0 6px 18px rgba(12,15,20,0.04)}
     .price{font-size:22px;font-weight:700;color:var(--accent)}
-
-    /* footer */
     footer{padding:28px 0;color:var(--muted)}
-
-    /* responsive */
     @media (max-width:900px){
       .hero{grid-template-columns:1fr;}
       .grid-3{grid-template-columns:1fr}
@@ -72,19 +53,16 @@
       .container{padding:16px}
       .hero h1{font-size:22px}
     }
-
-    /* small utilities */
     .muted{color:var(--muted)}
     .center{text-align:center}
     .hidden{display:none}
     .pill{display:inline-block;padding:6px 10px;border-radius:999px;background:rgba(51,102,255,0.08);color:var(--accent);font-weight:600}
-
   </style>
 </head>
 <body>
   <header>
     <div class="container nav">
-      <div class="logo">Ms Thanh Thanh — Giáo viên Tiếng Anh</div>
+      <div class="logo">Beeenglish — Ms Brenna</div>
       <div>
         <a class="cta" href="#contact">Đăng ký học thử</a>
         <button class="mobile-nav-toggle hidden" aria-label="Mở menu">☰</button>
@@ -93,12 +71,11 @@
   </header>
 
   <main class="container">
-    <!-- Hero -->
     <section class="hero">
       <div>
         <span class="pill">Gia sư cá nhân • Lớp nhóm nhỏ</span>
-        <h1>Học Tiếng Anh tự nhiên — Nói tự tin, làm chủ giao tiếp</h1>
-        <p class="muted">ms Thanh Thanh — 5+ năm kinh nghiệm dạy tiếng Anh. Lớp online & offline, lộ trình rõ ràng, bài tập thực tế. Học thử 1 buổi để cảm nhận phương pháp.</p>
+        <h1>Cô Brenna thân thiện cùng bé học tiếng Anh</h1>
+        <p class="muted">Ms Brenna — 5+ năm kinh nghiệm dạy tiếng Anh. Lớp online & offline, lộ trình rõ ràng, bài tập thực tế.</p>
         <div class="buttons">
           <a class="cta" href="#contact">Đăng ký học thử</a>
           <a href="#courses" style="padding:10px 14px;border-radius:10px;background:#fff;text-decoration:none;border:1px solid #e6eefc;">Xem khóa học</a>
@@ -109,69 +86,46 @@
       </div>
 
       <aside class="card">
-        <img class="teacher-photo" src="https://via.placeholder.com/600x600.png?text=H%C3%ACnh+%C4%91%E1%BB%99i" alt="[Ms Thanh Thanh]">
+        <img class="teacher-photo" src="https://raw.githubusercontent.com/Beeenglish/MrsBy/main/%E1%BA%A3nh%20th%E1%BA%BB.jpg" alt="Ms Brenna">
         <div style="margin-top:12px">
-          <strong>[Ms Thanh Thanh]</strong>
-          <div class="muted">Giáo viên Tiếng Anh — Chuyên giao tiếp & luyện thi</div>
+          <strong>Ms Brenna</strong>
+          <div class="muted">Giáo viên Tiếng Anh — Kèm học sinh mất gốc & báo bài</div>
         </div>
       </aside>
     </section>
 
-    <!-- About -->
-    <section id="about">
-      <h2>Vì sao chọn Ms Thanh Thanh?</h2>
-      <div class="grid-3" style="margin-top:12px">
-        <div class="card course">
-          <h3>Phương pháp thực hành</h3>
-          <p class="muted">Tập trung vào giao tiếp thực tế, feedback cá nhân từng học viên, và bài tập tương tác.</p>
-        </div>
-        <div class="card course">
-          <h3>Lộ trình rõ ràng</h3>
-          <p class="muted">Từ cơ bản đến nâng cao: giao tiếp hàng ngày → trình độ học thuật → luyện thi (IELTS/TOEIC).</p>
-        </div>
-        <div class="card course">
-          <h3>Thời gian linh hoạt</h3>
-          <p class="muted">Lớp tối, cuối tuần, hoặc 1:1 theo giờ rảnh của học viên.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Courses -->
     <section id="courses">
       <h2>Khóa học nổi bật</h2>
       <div class="grid-2" style="margin-top:12px">
         <div class="price-card">
-          <h4>Giao tiếp cơ bản → tự tin</h4>
-          <p class="muted">Lớp nhóm 4-6 người • 8 buổi • Học trực tuyến</p>
+          <h4>Kèm học sinh mất gốc mọi lứa tuổi</h4>
+          <p class="muted">Kèm 1-1 hoặc nhóm nhỏ • Lộ trình theo cá nhân</p>
           <div style="margin-top:12px" class="price">150k/buổi</div>
         </div>
         <div class="price-card">
-          <h4>Luyện IELTS (Band tăng rõ rệt)</h4>
-          <p class="muted">Kèm 1:1 hoặc nhóm nhỏ • Giáo trình cá nhân hóa</p>
+          <h4>Báo bài trên lớp</h4>
+          <p class="muted">Giúp học sinh nắm chắc bài vở, tiến bộ đều</p>
           <div style="margin-top:12px" class="price">Theo gói (liên hệ)</div>
         </div>
       </div>
     </section>
 
-    <!-- Testimonials -->
     <section id="testimonials">
       <h2>Lời học viên</h2>
       <div style="margin-top:12px">
         <div class="card" style="margin-bottom:10px">
-          “Cô Thanh rất tận tâm, mình tiến bộ rõ sau 2 tháng.” — Minh
+          “Ms Brenna rất tận tâm, mình tiến bộ rõ sau 2 tháng.” — Minh
         </div>
         <div class="card">
-          “Lớp nhỏ nên cô chỉnh kỹ. Mình tự tin giao tiếp hơn.” — Lan
+          “Lớp nhỏ nên Ms Brenna chỉnh kỹ. Mình tự tin giao tiếp hơn.” — Lan
         </div>
       </div>
     </section>
 
-    <!-- Contact -->
     <section id="contact">
       <h2>Đăng ký học thử / Liên hệ</h2>
       <div class="grid-2" style="margin-top:12px">
         <div>
-          <!-- Netlify form -->
           <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
             <input type="hidden" name="form-name" value="contact">
             <p class="hidden"><label>Không hiển thị: <input name="bot-field"></label></p>
@@ -179,21 +133,18 @@
             <label>Họ tên<br><input type="text" name="name" required style="width:100%;padding:10px;margin-top:6px;border-radius:8px;border:1px solid #e6eefc"></label>
             <label style="display:block;margin-top:10px">Số điện thoại / Zalo<br><input type="text" name="phone" required style="width:100%;padding:10px;margin-top:6px;border-radius:8px;border:1px solid #e6eefc"></label>
             <label style="display:block;margin-top:10px">Email<br><input type="email" name="email" style="width:100%;padding:10px;margin-top:6px;border-radius:8px;border:1px solid #e6eefc"></label>
-            <label style="display:block;margin-top:10px">Thông tin thêm (lớp mong muốn, giờ học)<br><textarea name="message" rows="4" style="width:100%;padding:10px;margin-top:6px;border-radius:8px;border:1px solid #e6eefc"></textarea></label>
+            <label style="display:block;margin-top:10px">Thông tin thêm<br><textarea name="message" rows="4" style="width:100%;padding:10px;margin-top:6px;border-radius:8px;border:1px solid #e6eefc"></textarea></label>
             <div style="margin-top:10px"><button type="submit" class="cta">Gửi thông tin — Học thử</button></div>
           </form>
 
-          <p class="muted" style="margin-top:12px">Sau khi gửi, [Tên giáo viên] sẽ liên hệ lại trong vòng 24 giờ để xếp lịch học thử.</p>
+          <p class="muted" style="margin-top:12px">Sau khi gửi, Ms Brenna sẽ liên hệ lại trong vòng 24 giờ để xếp lịch học thử.</p>
         </div>
 
         <div>
           <div class="card">
             <h4>Liên hệ nhanh</h4>
-            <p class="muted">SĐT / Zalo: <strong>[0362062155]</strong></p>
-            <p class="muted">Email: <strong>[phanaithanhthanh@gmail.com]</strong></p>
-            <p class="muted">Địa chỉ lớp offline: <strong>[phường Cẩm Thanh, Quảng Ngãi]</strong></p>
-            <p style="margin-top:10px">Mạng xã hội:</p>
-            <p class="muted">Facebook / Instagram / Tiktok: <a href="#">[link]</a></p>
+            <p class="muted">SĐT / Zalo: <strong>0362062155</strong></p>
+            <p class="muted">Facebook: <a href="https://www.facebook.com/thanhthanh.phan.33">Thanh Thanh Ái Phan</a></p>
           </div>
 
           <div style="margin-top:12px" class="card">
@@ -203,32 +154,10 @@
         </div>
       </div>
     </section>
-
   </main>
 
   <footer class="container center">
-    <p class="muted">© 2025 Ms Thanh Thanh • Làm web nhanh thử nghiệm trên Netlify</p>
+    <p class="muted">© 2025 Beeenglish — Ms Brenna • Làm web nhanh thử nghiệm trên Netlify</p>
   </footer>
-
-  <script>
-    // Mobile nav toggle (simple)
-    const btn = document.querySelector('.mobile-nav-toggle');
-    btn && btn.addEventListener('click', ()=>{
-      const links = document.querySelectorAll('nav a');
-      links.forEach(a=> a.style.display = a.style.display === 'inline-block' ? 'none' : 'inline-block');
-    });
-
-    // Smooth scroll for anchor links
-    document.querySelectorAll('a[href^="#"]').forEach(a=>{
-      a.addEventListener('click', e=>{
-        const href = a.getAttribute('href');
-        if(href.startsWith('#')){
-          e.preventDefault();
-          const el = document.querySelector(href);
-          if(el) el.scrollIntoView({behavior:'smooth',block:'start'});
-        }
-      });
-    });
-  </script>
 </body>
 </html>
