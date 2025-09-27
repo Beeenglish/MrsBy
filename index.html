@@ -1,100 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="icon" type="image/png" href="bee-icon.png">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Beeenglish</title>
+  <link rel="icon" type="image/png" href="bee-icon.png">
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #fffef9; }
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
     header { background: #f8f9fa; text-align: center; padding: 20px; position: relative; }
     header img.banner { width: 100%; max-height: 400px; object-fit: cover; border-radius: 10px; }
     header img.portrait { width: 140px; height: 140px; border-radius: 50%; margin-top: -70px; border: 4px solid #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.2); }
-    header .logo { position: absolute; top: 20px; left: 20px; display: flex; align-items: center; gap: 10px; }
-    header .logo img { width: 50px; }
-    header .logo span { font-size: 1.5em; font-weight: bold; color: #ffb300; text-shadow: 1px 1px 2px rgba(0,0,0,0.2); }
-    h1 { color: #333; margin: 20px 0 10px; }
-    .intro { text-align: center; margin: 10px 0 20px; font-size: 1.2em; color: #555; }
-
-    /* Buttons */
-    .actions { text-align: center; margin-bottom: 30px; }
-    .actions button {
-      background: #ffb300;
-      border: none;
-      padding: 12px 25px;
-      margin: 10px;
-      border-radius: 25px;
-      font-size: 1em;
-      font-weight: bold;
-      color: #333;
-      cursor: pointer;
-      transition: 0.3s;
-      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
-    }
-    .actions button:hover { background: #ffca28; transform: translateY(-2px); }
-
-    .container { width: 90%; max-width: 1000px; margin: auto; }
+    h1 { color: #333; margin: 20px 0 10px; display: flex; justify-content: center; align-items: center; gap: 10px; }
+    h1 img.icon { width: 40px; height: 40px; }
     h2 { margin-top: 40px; color: #444; text-align: center; }
+    .intro { text-align: center; margin: 10px 0 30px; font-size: 1.2em; color: #555; }
+    .container { width: 90%; max-width: 1000px; margin: auto; }
     .courses, .testimonials { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-top: 20px; }
     .card { border: 1px solid #ddd; border-radius: 10px; padding: 15px; background: #fff; box-shadow: 0 2px 6px rgba(0,0,0,0.05); }
     .card img { width: 100%; border-radius: 8px; margin-bottom: 10px; }
     .testimonial-card { display: flex; align-items: center; gap: 10px; }
     .testimonial-card img { width: 40px; height: 40px; border-radius: 50%; }
-
+    .button-group { margin: 20px 0; display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; }
+    .button-group button { background: #ffd54f; border: none; padding: 12px 20px; border-radius: 6px; cursor: pointer; font-size: 1em; transition: background 0.3s; }
+    .button-group button:hover { background: #ffca28; }
     footer { background: #333; color: #fff; text-align: center; padding: 20px; margin-top: 40px; }
     a { color: #ffd54f; text-decoration: none; }
-
-    /* Popup styles */
-    .popup-overlay {
-      display: none;
-      position: fixed;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
-      background: rgba(0,0,0,0.6);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      z-index: 999;
-    }
-    .popup-content {
-      background: #fff;
-      padding: 25px;
-      border-radius: 10px;
-      max-width: 600px;
-      width: 90%;
-      position: relative;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-      text-align: center;
-    }
-    .popup-content h3 { margin-top: 0; color: #333; }
-    .popup-content p { color: #555; }
-    .popup-close {
-      position: absolute;
-      top: 10px; right: 15px;
-      font-size: 1.5em;
-      cursor: pointer;
-      color: #666;
-    }
   </style>
 </head>
 <body>
   <header>
-    <!-- Logo ong + chữ -->
-    <div class="logo">
-      <img src="https://cdn-icons-png.flaticon.com/512/523/523442.png" alt="bee logo">
-      <span>Beeenglish</span>
-    </div>
-
     <img src="https://images.pexels.com/photos/4144222/pexels-photo-4144222.jpeg" alt="Beeenglish banner" class="banner">
     <img src="https://raw.githubusercontent.com/Beeenglish/MrsBy/main/%E1%BA%A3nh%20th%E1%BA%BB.jpg" alt="Ms Brenna portrait" class="portrait">
-    <h1>Beeenglish</h1>
+    <h1>
+      <img src="bee-icon.png" alt="Bee icon" class="icon"> 
+      Beeenglish
+    </h1>
     <p class="intro">Ms Brenna – Friendly teacher for your kids to learn English</p>
-    
-    <!-- Buttons -->
-    <div class="actions">
-      <button onclick="openPopup('courses')">Xem khóa học</button>
-      <button onclick="openPopup('video')">Video học thử</button>
-      <button onclick="openPopup('register')">Đăng ký ngay</button>
+
+    <!-- Các nút chức năng -->
+    <div class="button-group">
+      <button onclick="window.scrollTo({top: document.querySelector('.courses').offsetTop, behavior: 'smooth'})">Khóa học</button>
+      <button onclick="alert('Video học thử sẽ được cập nhật sớm!')">Video học thử</button>
+      <button onclick="window.scrollTo({top: document.querySelector('footer').offsetTop, behavior: 'smooth'})">Liên hệ</button>
     </div>
   </header>
 
@@ -131,31 +78,5 @@
     <p>Liên hệ: 0362062155 | Zalo: Thanh Phan</p>
     <p>Facebook: <a href="https://www.facebook.com/thanhthanh.phan.33" target="_blank">Thanh Thanh Ái Phan</a></p>
   </footer>
-
-  <!-- Popup -->
-  <div id="popup" class="popup-overlay">
-    <div class="popup-content" id="popup-content">
-      <span class="popup-close" onclick="closePopup()">&times;</span>
-      <!-- Nội dung sẽ được thêm bằng JS -->
-    </div>
-  </div>
-
-  <script>
-    function openPopup(type) {
-      let content = "";
-      if (type === "courses") {
-        content = "<h3>Danh sách Khóa học</h3><p>- Kèm học sinh mất gốc<br>- Báo bài trên lớp<br>- Luyện thi chứng chỉ<br>- Tiếng Anh giao tiếp</p>";
-      } else if (type === "video") {
-        content = "<h3>Video học thử</h3><iframe width='100%' height='315' src='https://www.youtube.com/embed/dQw4w9WgXcQ' title='Video học thử' frameborder='0' allowfullscreen></iframe>";
-      } else if (type === "register") {
-        content = "<h3>Đăng ký ngay</h3><p>Điền thông tin để được tư vấn:</p><form><input type='text' placeholder='Họ và tên' style='width:90%; padding:8px; margin:5px;'><br><input type='tel' placeholder='Số điện thoại' style='width:90%; padding:8px; margin:5px;'><br><button type='submit' style='background:#ffb300; border:none; padding:10px 20px; margin-top:10px; border-radius:20px; font-weight:bold; cursor:pointer;'>Gửi</button></form>";
-      }
-      document.getElementById("popup-content").innerHTML = "<span class='popup-close' onclick='closePopup()'>&times;</span>" + content;
-      document.getElementById("popup").style.display = "flex";
-    }
-    function closePopup() {
-      document.getElementById("popup").style.display = "none";
-    }
-  </script>
 </body>
 </html>
